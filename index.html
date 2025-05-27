@@ -12,29 +12,61 @@
       background-color: #f7f9fc;
       color: #1a202c;
     }
-    header, footer {
+
+    header {
       background-color: #2b6cb0;
-      color: white;
-      padding: 1rem;
+      padding: 6rem 1rem 4rem;
       text-align: center;
+      color: white;
+      position: relative;
     }
+
+    nav {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+    }
+
     nav a {
       color: white;
-      margin: 0 1rem;
+      margin-left: 1rem;
       text-decoration: none;
       font-weight: 600;
     }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
     main {
-      padding: 2rem;
+      padding: 3rem 2rem;
       max-width: 900px;
       margin: auto;
     }
-    h1, h2 {
+
+    h2 {
       color: #2b6cb0;
+      margin-bottom: 1rem;
     }
+
     .section {
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
     }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      line-height: 1.6;
+    }
+
     .contact-block {
       background-color: #fff;
       padding: 1.5rem;
@@ -42,81 +74,26 @@
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
       margin-bottom: 2rem;
     }
+
     .address-line {
       margin: 0.3rem 0;
     }
-    ul {
-      padding-left: 1.5rem;
-    }
-    li {
-      line-height: 1.6;
+
+    footer {
+      background-color: #2b6cb0;
+      color: white;
+      text-align: center;
+      padding: 1rem;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Generic Capital</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="inquiries.html">Inquiries</a>
-  </nav>
-</header>
-
-<main>
-
-  <div class="section">
-    <h2>Our Offices</h2>
-
-    <div class="contact-block">
-      <h3>Port Harcourt</h3>
-      <p class="address-line">46 Nembe Street</p>
-      <p class="address-line">Rumuibekwe Housing Estate</p>
-      <p class="address-line">+234 (0) 8033471284</p>
-      <p class="address-line">+234 (0) 8091000809</p>
-    </div>
-
-    <div class="contact-block">
-      <h3>Aba</h3>
-      <p class="address-line">Suite TF1, Level 2</p>
-      <p class="address-line">159 Azikiwe Road</p>
-      <p class="address-line">+234 (0) 8037213773</p>
-    </div>
-
-    <div class="contact-block">
-      <h3>Contact & Info</h3>
-      <p class="address-line">Email: <a href="mailto:genericapital@yahoo.com">genericapital@yahoo.com</a></p>
-      <p class="address-line">VAT No: OSV - 100641505</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Vision</h2>
-    <p>To be a consulting firm of choice in the provision of value-added business and financial solutions to clients.</p>
-  </div>
-
-  <div class="section">
-    <h2>Mission</h2>
-    <p>To empower organizations through the provision of tailor-made solutions that achieve measurable results in an efficient and sustainable manner.</p>
-  </div>
-
-  <div class="section">
-    <h2>Core Values – RIPE</h2>
-    <p>At Generic Capital, our core values are encapsulated under <strong>RIPE</strong> and are integrated into our business philosophy:</p>
-    <ul>
-      <li><strong>Resilience</strong></li>
-      <li><strong>Integrity</strong></li>
-      <li><strong>Partnership</strong></li>
-      <li><strong>Excellence</strong></li>
-    </ul>
-  </div>
-
-</main>
-
-<footer>
-  <p>&copy; 2025 Generic Capital. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="inquiries.html">Inquiries</a>
+    </nav>
+    <h1>Generic Capital</h1>
+    <p>To be a consulting firm of choice in the provision of value-added business and financial solutions.</p>
