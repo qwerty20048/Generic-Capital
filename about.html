@@ -1,4 +1,3 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,75 +6,178 @@
   <title>About Us - Generic Capital</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body { margin: 0; font-family: 'Inter', sans-serif; background-color: #f7f9fc; color: #1a202c; }
-    header, footer { background-color: #2b6cb0; color: white; padding: 1rem; text-align: center; }
-    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: 600; }
-    main { padding: 2rem; max-width: 900px; margin: auto; }
-    h1, h2 { color: #2b6cb0; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6fa;
+      color: #1a202c;
+    }
+
+    header {
+      background: url('https://via.placeholder.com/1600x400') no-repeat center center/cover;
+      padding: 6rem 1rem;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(43, 108, 176, 0.7);
+      z-index: 0;
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    nav {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      z-index: 2;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    main {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #2b6cb0;
+      margin-top: 2.5rem;
+    }
+
+    .section-intro {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .team-member {
+      margin-top: 3rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .team-member img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .team-info {
+      max-width: 800px;
+    }
+
+    .team-info h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #2b6cb0;
+    }
+
+    .team-info p {
+      margin: 0.5rem 0;
+    }
+
+    footer {
+      background-color: #2b6cb0;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>About Generic Capital</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
+      <a href="about.html">About</a>
       <a href="inquiries.html">Inquiries</a>
     </nav>
+    <h1>About Us</h1>
+    <p>Telling our inspiring story from the very beginning to today.</p>
   </header>
 
   <main>
-    <h2>About the firm</h2>
-    <p>Generic Capital Management Limited is a premier business consulting firm committed to excellence, integrity and client success. Founded with a vision to guide enterprises through transformative growth, our team brings decades of industry expertise across finance, operations, business incubation, strategic development and assurance.
-      
-      Since commencement of business in 2005, Generic Capital has served as a corporate platform for providing strategic consulting services to private and public sector clients to help them thrive in rapidly evolving markets. Our expert teams deliver customized solutions that drive growth, efficiency and innovation.</p>
-    <h2>Business Model</h2>
-    <p>Our business model is to seek close partnership with clients to identify and understand their exact needs and then design specific action plans to meet those needs in a holistic, sustainable and mutually beneficial manner. Each assignment is considered peculiar in its own way as we do not adopt the consulting strategy of one-size-fits-all. Generic Capital strives to build internal capacity within the client organization to enable changes introduced to be owned and internalized.</p>
-    <h2>Team Profile</h2>
-    <p>Frank Chudi Nnoli – Managing Consultant
-      Mr. Nnoli holds a first degree in Accountancy and an MBA in Finance from the University of Port Harcourt and has over 20 years post graduation work experience in banking and consulting. His working career started with the Central Bank of Nigeria – CBN from where he joined the then Afribank Group. He worked as relationship and Credit Manager in Port Harcourt Regional Office, Aba and Owerri Branches. Mr. Nnoli moved from Afribank Nigeria PLC to the then Capital Bank International PLC now Acess Bank PLC where he was the Deputy Manager and Head of Credit & Marketing before joining the team of Generic Capital Management Limited. 
-      As the team lead of Generic Capital, Mr. Nnoli has overseen the incubation and growth of several new businesses the manufacturing, trading microfinance banking and service sectors. 
-      He has attended several management-development training courses within and outside the country.
-      Frank Chudi Nnoli – Managing Consultant
-      Mr. Nnoli holds a first degree in Accountancy and an MBA in Finance from the University of Port Harcourt and has over 20 years post graduation work experience in banking and consulting. His working career started with the Central Bank of Nigeria – CBN from where he joined the then Afribank Group. He worked as relationship and Credit Manager in Port Harcourt Regional Office, Aba and Owerri Branches. Mr. Nnoli moved from Afribank Nigeria PLC to the then Capital Bank International PLC now Acess Bank PLC where he was the Deputy Manager and Head of Credit & Marketing before joining the team of Generic Capital Management Limited. 
-      As the team lead of Generic Capital, Mr. Nnoli has overseen the incubation and growth of several new businesses the manufacturing, trading microfinance banking and service sectors. 
-      He has attended several management-development training courses within and outside the country.
+    <h2>Behind the Success</h2>
+    <p class="section-intro">
+      Generic Capital Management Limited is a premier business consulting firm committed to excellence, integrity and client success. Founded with a vision to guide enterprises through transformative growth, our team brings decades of industry expertise across finance, operations, business incubation, strategic development and assurance.
     </p>
-    <p>V.N.Anyanwuocha (B.Sc., MBA, FCA, JP) – Associate Consultant
-Mr. Venatius Ngozi Anyanwuocha is a seasoned Chartered Accountant and has held several middle, senior and top management positions in public and private sector organizations over the last 20 years in the areas of finance, Banking, Audit and Assurance, Consulting and financial advisory. A Fellow of the Institute of Chartered Accountants of Nigeria – ICAN and a two-time alumnus of the University of Calabar, Calabar with a Bachelor of Science Degree in Accounting (Second class Honours, Upper Division) and an MBA in Finance. Also holds an ICAN certificate of proficiency (Cert. IFR) in International Financial Reporting Standard (IFRS). Mr. Anyanwuocha won the University of Calabar Scholarship award in his time the Best student in the Faculty of Management Studies. 
 
+    <!-- Team Member 1 -->
+    <div class="team-member">
+      <img src="https://via.placeholder.com/140" alt="Frank Chudi Nnoli">
+      <div class="team-info">
+        <h3>Frank Chudi Nnoli</h3>
+        <p><strong>Managing Consultant</strong></p>
+        <p>Mr. Nnoli holds a degree in Accountancy and an MBA in Finance from the University of Port Harcourt. With 20+ years of experience in banking and consulting, he has led the incubation and growth of multiple businesses in manufacturing, microfinance, and services.</p>
+      </div>
+    </div>
 
-He also holds several other fellowships, honours and recognitions including:</p>
-      
-<p>i)	Fellow Institute of Chartered Accountants of Nigeria – FCA</p>
-<p>ii)	Fellow Institute of Chartered Administrators Nigeria - FCAi</p>
-<p>iii)	Fellow Organizational Safety and Health Association – FOSHA UK</p>
-<p>iv)	Fellow Chartered Institute of Forensic and Investigative Auditors – FCIFIA</p>
-<p>v)	Patron – ICAN Owerri & District Society</p>
-<p>vi)	Member – Special Marshal of the FRSC Owerri Command RS 9.4</p>
-<p>vii)	Honorary Life Member – Chartered Institute of Bankers Nigeria (HCIB)</p>
-<p>viii)	Justice of the Peace - JP</p>
-    
-<p>Mr. Anyanwuocha served as Bursar and Chief Financial Officer of the Federal Polytechnic Nekede, Owerri for the period 2020 to 2025. As Bursar, he recorded several milestone achievements in budgeting, financial processing and reporting in the institution. He has attended several leadership and management development trainings, conferences and workshops both locally and internationally including the Nigerian Institute of Policy and Strategic Studies (NIPSS) Jos in 2019, World Congress of Accountants Conference, Mumbai India in 2022, African Congress of Accountants (ACOA) Conference, Abidjan Cote D’ivore in 2023, ICAN-Canada and ICAN-USA Annual conferences in 2023.<p>
+    <!-- Team Member 2 -->
+    <div class="team-member">
+      <img src="https://via.placeholder.com/140" alt="V.N. Anyanwuocha">
+      <div class="team-info">
+        <h3>V.N. Anyanwuocha</h3>
+        <p><strong>Associate Consultant</strong></p>
+        <p>A seasoned Chartered Accountant and Fellow of ICAN, Mr. Anyanwuocha has over 20 years' experience in finance, banking, and public service. He served as CFO of Federal Polytechnic Nekede and holds numerous honors and fellowships.</p>
+      </div>
+    </div>
 
-<p>Edwin E. Harcourt – PhD, FCA, FCTI
-Dr. Harcourt currently works with the Audit Department of the University of Port Harcourt and was once the Director of Audit Department of the University. Holds a Doctorate Degree in Accounting and Finance from the University of Port Harcourt, Nigeria. Dr. Harcourt is a Fellow of both the Institute of Chartered Accountants of Nigeria (ICAN) and the Chartered Institute of Taxation of Nigeria (CITN). 
-He holds a Bachelors degree in Accounting from the University of Calabar where he won the first prize in 1992 as the best graduating student, a Masters Degree (M.Sc.) in Finance and an MBA in Business Administration from the same University. Dr. Harcourt has diversified experience in Public and private sector spanning through Banking, Financial Management and assurance. He served in several Banks as manager Banking operations and Regional Head of internal control. 
+    <!-- Team Member 3 -->
+    <div class="team-member">
+      <img src="https://via.placeholder.com/140" alt="Edwin E. Harcourt">
+      <div class="team-info">
+        <h3>Edwin E. Harcourt</h3>
+        <p><strong>PhD, FCA, FCTI</strong></p>
+        <p>Dr. Harcourt is a Doctor of Accounting & Finance with over 25 years in auditing, banking, and consulting. He's worked in senior roles at University of Port Harcourt and led major donor project reviews across Nigeria.</p>
+      </div>
+    </div>
 
+    <!-- Team Member 4 -->
+    <div class="team-member">
+      <img src="https://via.placeholder.com/140" alt="Steve Nwulu">
+      <div class="team-info">
+        <h3>Steve Nwulu</h3>
+        <p><strong>PhD, MBA, FCIB</strong></p>
+        <p>Dr. Nwulu has over two decades of experience in banking, HR, and trade finance. He served as Regional Manager at Access Bank and brings strong expertise in credit, marketing, and human capital management.</p>
+      </div>
+    </div>
 
-He has also been actively involved in the review of several large and medium scale donor financed projects/programmes in Nigeria. He was also a team lead in Cross River State Government IGR programme 2010. Mr. Harcourt has attended several management development and professional training courses both within and outside the Nigeria.</p>
-
-<p>Steve Nwul – PhD, MBA, FCIB
-Dr. Steve Nwulu holds a Doctorate Degree in Finance and is also a fellow of the Chartered Institute of Bankers of Nigeria-FCIB. He holds a Bachelors of Science Degree In Finance and Banking (Second Class , Hons  Upper Division) from Olabisi Onabanjo University, Ago-Iwoye, Ogun State and a Masters in Business Administration (Management) from Rivers State University of Science and Technology, Port harcourt.
-Dr. Steve has over twenty years of banking experience covering strategic areas like, Credit and Marketing, Operations, Training and Manpower Development, Public Sector, Commercial Banking, Human Resources and Trade Finance. His banking career spanned several banks including First Bank Plc where he was the Marketing Manager, Public Sector Collections, AllStates Trust Bank where he was the Training and Manpower Development Manager and later Branch Manager. He was also the pioneer branch manager Intercontinental Bank Plc Umuahia in 2006 and later became the Regional Manager South East. Dr. Steve was appointed Regional Manager Commercial Banking Sector in Access Bank in 2011 following the acquisition of Intercontinental Bank and was in-charge of the South East Zone till January 2014. Steve is a highly resourceful person with special skills in Credit, Marketing, Trade finance and Human Capital Management. He has attended several management development and professional training courses both within and outside the Nigeria.</p>
-    
-<p>Val Ogu – FCA, MBA, B.Sc. (Hons.)
-Val Ogu is a seasoned chartered Accountant and a Fellow of the Institute of Chartered Accountants of Nigeria – ICAN. He is an alumnus of several institutions including the Federal Polytechnic Nekede – Owerri where he holds a Higher National Diploma (HND) in Accounting (Upper Credit), the Rivers State University of Science and Technology – Port Harcourt where he holds a B.Sc (Hons) Degree in Accounting (Second class Upper division) and the Federal University of Technology – Owerri where he holds an MBA Financial Management Technology. Val has accumulated over 30 years’ professional experience in banking, consulting and audit. He served as Regional Manager Control and Compliance with Standard Trust Bank PLC, Branch Manager at the United Bank for Africa PLC and Sterling Bank Plc respectively. Mr. Val had earlier stints in financial management and consulting experience at EMB Finance & Securities Limited and Cowrie Consultants Limited. He is the Managing Partner of Val Ogu & Co. (Chartered Accountants), Port Harcourt. He has  attended several management and professional development courses within and outside Nigeria.
-</p>
+    <!-- Team Member 5 -->
+    <div class="team-member">
+      <img src="https://via.placeholder.com/140" alt="Val Ogu">
+      <div class="team-info">
+        <h3>Val Ogu</h3>
+        <p><strong>FCA, MBA, B.Sc. (Hons)</strong></p>
+        <p>Mr. Ogu is a chartered accountant with 30+ years of experience in banking, audit, and consulting. He held leadership roles at UBA, Sterling Bank, and now manages Val Ogu & Co. (Chartered Accountants).</p>
+      </div>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Generic Capital. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
