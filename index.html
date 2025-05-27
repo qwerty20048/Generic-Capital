@@ -78,6 +78,10 @@
       transition: color 0.3s ease;
     }
 
+    h2:hover {
+      color: orange;
+    }
+
     .section-intro {
       font-size: 1.1rem;
       margin-bottom: 2rem;
@@ -122,6 +126,13 @@
       border-radius: 8px;
       box-shadow: 0 1px 6px rgba(0,0,0,0.05);
       margin-top: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .contact-block:hover {
+      border: 1px solid orange;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transform: translateY(-4px);
     }
 
     .contact-block h3 {
@@ -132,12 +143,6 @@
 
     .contact-block p {
       margin: 0.3rem 0;
-    }
-
-    /* 🔶 Hover effect on headings */
-    .contact-block h3:hover,
-    h2:hover {
-      color: orange;
     }
 
     footer {
