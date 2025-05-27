@@ -3,28 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Generic Capital - Home</title>
+  <title>Home - Generic Capital</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f7f9fc;
+      background-color: #f4f6fa;
       color: #1a202c;
     }
 
     header {
-      background-color: #2b6cb0;
-      padding: 6rem 1rem 4rem;
+      background: url('https://via.placeholder.com/1600x400') no-repeat center center/cover;
+      padding: 6rem 1rem;
       text-align: center;
       color: white;
       position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(43, 108, 176, 0.7);
+      z-index: 0;
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
     }
 
     nav {
       position: absolute;
       top: 1rem;
       right: 2rem;
+      z-index: 2;
     }
 
     nav a {
@@ -34,29 +49,26 @@
       font-weight: 600;
     }
 
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      font-weight: 400;
-    }
-
     main {
-      padding: 3rem 2rem;
-      max-width: 900px;
+      padding: 4rem 2rem;
+      max-width: 1100px;
       margin: auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
 
     h2 {
       color: #2b6cb0;
-      margin-bottom: 1rem;
+      margin-top: 2.5rem;
+      text-align: center;
     }
 
-    .section {
-      margin-bottom: 3rem;
+    .section-intro {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      text-align: center;
     }
 
     ul {
@@ -65,35 +77,97 @@
 
     li {
       line-height: 1.6;
+      margin-bottom: 0.5rem;
     }
 
     .contact-block {
-      background-color: #fff;
+      background-color: #f9f9f9;
       padding: 1.5rem;
       border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      margin-bottom: 2rem;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+      margin-top: 1.5rem;
     }
 
-    .address-line {
+    .contact-block h3 {
+      color: #2b6cb0;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-block p {
       margin: 0.3rem 0;
     }
 
     footer {
       background-color: #2b6cb0;
       color: white;
-      text-align: center;
       padding: 1rem;
+      text-align: center;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="inquiries.html">Inquiries</a>
-    </nav>
-    <h1>Generic Capital</h1>
-    <p>To be a consulting firm of choice in the provision of value-added business and financial solutions.</p>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="inquiries.html">Inquiries</a>
+  </nav>
+  <h1>Generic Capital</h1>
+  <p>Empowering organizations with tailor-made business and financial solutions</p>
+</header>
+
+<main>
+  <h2>Vision</h2>
+  <p class="section-intro">
+    To be a consulting firm of choice in the provision of value-added business and financial solutions to clients.
+  </p>
+
+  <h2>Mission</h2>
+  <p class="section-intro">
+    To empower organizations through the provision of tailor-made solutions that achieve measurable results in an efficient and sustainable manner.
+  </p>
+
+  <h2>Core Values – RIPE</h2>
+  <p class="section-intro">
+    At Generic Capital, our core values are encapsulated under <strong>RIPE</strong> and are integrated in our business philosophy:
+  </p>
+  <ul>
+    <li><strong>Resilience</strong></li>
+    <li><strong>Integrity</strong></li>
+    <li><strong>Partnership</strong></li>
+    <li><strong>Excellence</strong></li>
+  </ul>
+
+  <h2>Office Locations</h2>
+
+  <div class="contact-block">
+    <h3>Port Harcourt</h3>
+    <p>46 Nembe Street</p>
+    <p>Rumuibekwe Housing Estate</p>
+    <p>+234 (0) 8033471284</p>
+    <p>+234 (0) 8091000809</p>
+  </div>
+
+  <div class="contact-block">
+    <h3>Aba</h3>
+    <p>Suite TF1, Level 2</p>
+    <p>159 Azikiwe Road</p>
+    <p>+234 (0) 8037213773</p>
+  </div>
+
+  <div class="contact-block">
+    <h3>Contact & VAT</h3>
+    <p>Email: <a href="mailto:genericapital@yahoo.com">genericapital@yahoo.com</a></p>
+    <p>VAT No: OSV - 100641505</p>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Generic Capital. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
