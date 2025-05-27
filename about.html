@@ -94,8 +94,19 @@
       color: #2b6cb0;
     }
 
-    .team-info p {
-      margin: 0.5rem 0;
+    .read-more-content {
+      display: none;
+      margin-top: 0.5rem;
+    }
+
+    .read-more-button {
+      background-color: transparent;
+      color: #2b6cb0;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 0;
+      margin-top: 0.5rem;
     }
 
     footer {
@@ -108,76 +119,104 @@
 </head>
 <body>
 
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="inquiries.html">Inquiries</a>
-    </nav>
-    <h1>About Us</h1>
-    <p>Telling our inspiring story from the very beginning to today.</p>
-  </header>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="inquiries.html">Inquiries</a>
+  </nav>
+  <h1>About Us</h1>
+  <p>Telling our inspiring story from the very beginning to today.</p>
+</header>
 
-  <main>
-    <h2>Behind the Success</h2>
-    <p class="section-intro">
-      Generic Capital Management Limited is a premier business consulting firm committed to excellence, integrity and client success. Founded with a vision to guide enterprises through transformative growth, our team brings decades of industry expertise across finance, operations, business incubation, strategic development and assurance.
-    </p>
+<main>
+  <h2>About the Firm</h2>
+  <p class="section-intro">
+    Generic Capital Management Limited is a premier business consulting firm committed to excellence, integrity and client success. Founded with a vision to guide enterprises through transformative growth, our team brings decades of industry expertise across finance, operations, business incubation, strategic development and assurance. <br><br>
+    Since commencement of business in 2005, Generic Capital has served as a corporate platform for providing strategic consulting services to private and public sector clients to help them thrive in rapidly evolving markets. Our expert teams deliver customized solutions that drive growth, efficiency and innovation.
+  </p>
 
-    <!-- Team Member 1 -->
-    <div class="team-member">
-      <img src="https://via.placeholder.com/140" alt="Frank Chudi Nnoli">
-      <div class="team-info">
-        <h3>Frank Chudi Nnoli</h3>
-        <p><strong>Managing Consultant</strong></p>
-        <p>Mr. Nnoli holds a degree in Accountancy and an MBA in Finance from the University of Port Harcourt. With 20+ years of experience in banking and consulting, he has led the incubation and growth of multiple businesses in manufacturing, microfinance, and services.</p>
+  <h2>Business Model</h2>
+  <p class="section-intro">
+    Our business model is to seek close partnership with clients to identify and understand their exact needs and then design specific action plans to meet those needs in a holistic, sustainable and mutually beneficial manner. Each assignment is considered peculiar in its own way as we do not adopt the consulting strategy of one-size-fits-all. Generic Capital strives to build internal capacity within the client organization to enable changes introduced to be owned and internalized.
+  </p>
+
+  <h2>Team Profile</h2>
+
+  <!-- Team Member Template -->
+  <div class="team-member">
+    <img src="https://via.placeholder.com/140" alt="Frank Nnoli">
+    <div class="team-info">
+      <h3>Frank Chudi Nnoli – Managing Consultant</h3>
+      <p>Mr. Nnoli holds a degree in Accountancy and an MBA in Finance from the University of Port Harcourt.</p>
+      <div class="read-more-content" id="more-nnoli">
+        <p>He has over 20 years post-graduation work experience in banking and consulting... [full bio here]</p>
       </div>
+      <button class="read-more-button" onclick="toggleReadMore('more-nnoli', this)">Read more</button>
     </div>
+  </div>
 
-    <!-- Team Member 2 -->
-    <div class="team-member">
-      <img src="https://via.placeholder.com/140" alt="V.N. Anyanwuocha">
-      <div class="team-info">
-        <h3>V.N. Anyanwuocha</h3>
-        <p><strong>Associate Consultant</strong></p>
-        <p>A seasoned Chartered Accountant and Fellow of ICAN, Mr. Anyanwuocha has over 20 years' experience in finance, banking, and public service. He served as CFO of Federal Polytechnic Nekede and holds numerous honors and fellowships.</p>
+  <div class="team-member">
+    <img src="https://via.placeholder.com/140" alt="V.N. Anyanwuocha">
+    <div class="team-info">
+      <h3>V.N. Anyanwuocha – Associate Consultant</h3>
+      <p>Mr. Anyanwuocha is a Chartered Accountant with 20+ years of experience in finance and consulting.</p>
+      <div class="read-more-content" id="more-anya">
+        <p>He is a Fellow of ICAN, served as Bursar of Federal Polytechnic Nekede, and holds numerous fellowships... [full bio here]</p>
       </div>
+      <button class="read-more-button" onclick="toggleReadMore('more-anya', this)">Read more</button>
     </div>
+  </div>
 
-    <!-- Team Member 3 -->
-    <div class="team-member">
-      <img src="https://via.placeholder.com/140" alt="Edwin E. Harcourt">
-      <div class="team-info">
-        <h3>Edwin E. Harcourt</h3>
-        <p><strong>PhD, FCA, FCTI</strong></p>
-        <p>Dr. Harcourt is a Doctor of Accounting & Finance with over 25 years in auditing, banking, and consulting. He's worked in senior roles at University of Port Harcourt and led major donor project reviews across Nigeria.</p>
+  <div class="team-member">
+    <img src="https://via.placeholder.com/140" alt="Edwin Harcourt">
+    <div class="team-info">
+      <h3>Edwin E. Harcourt – PhD, FCA, FCTI</h3>
+      <p>Dr. Harcourt holds a doctorate in Accounting and Finance and has held key audit roles at UniPort.</p>
+      <div class="read-more-content" id="more-harcourt">
+        <p>He has extensive public and private sector experience in auditing, banking, and donor-funded programs... [full bio here]</p>
       </div>
+      <button class="read-more-button" onclick="toggleReadMore('more-harcourt', this)">Read more</button>
     </div>
+  </div>
 
-    <!-- Team Member 4 -->
-    <div class="team-member">
-      <img src="https://via.placeholder.com/140" alt="Steve Nwulu">
-      <div class="team-info">
-        <h3>Steve Nwulu</h3>
-        <p><strong>PhD, MBA, FCIB</strong></p>
-        <p>Dr. Nwulu has over two decades of experience in banking, HR, and trade finance. He served as Regional Manager at Access Bank and brings strong expertise in credit, marketing, and human capital management.</p>
+  <div class="team-member">
+    <img src="https://via.placeholder.com/140" alt="Steve Nwulu">
+    <div class="team-info">
+      <h3>Steve Nwulu – PhD, MBA, FCIB</h3>
+      <p>Dr. Nwulu has over 20 years of experience in banking, public sector, and manpower development.</p>
+      <div class="read-more-content" id="more-nwulu">
+        <p>He has served in multiple leadership roles including Regional Manager at Access Bank... [full bio here]</p>
       </div>
+      <button class="read-more-button" onclick="toggleReadMore('more-nwulu', this)">Read more</button>
     </div>
+  </div>
 
-    <!-- Team Member 5 -->
-    <div class="team-member">
-      <img src="https://via.placeholder.com/140" alt="Val Ogu">
-      <div class="team-info">
-        <h3>Val Ogu</h3>
-        <p><strong>FCA, MBA, B.Sc. (Hons)</strong></p>
-        <p>Mr. Ogu is a chartered accountant with 30+ years of experience in banking, audit, and consulting. He held leadership roles at UBA, Sterling Bank, and now manages Val Ogu & Co. (Chartered Accountants).</p>
+  <div class="team-member">
+    <img src="https://via.placeholder.com/140" alt="Val Ogu">
+    <div class="team-info">
+      <h3>Val Ogu – FCA, MBA, B.Sc. (Hons.)</h3>
+      <p>Mr. Ogu is a Fellow of ICAN with over 30 years of experience in banking, audit, and consulting.</p>
+      <div class="read-more-content" id="more-ogu">
+        <p>He served as Branch and Regional Manager for several banks and currently leads Val Ogu & Co... [full bio here]</p>
       </div>
+      <button class="read-more-button" onclick="toggleReadMore('more-ogu', this)">Read more</button>
     </div>
-  </main>
+  </div>
+</main>
 
-  <footer>
-    <p>&copy; 2025 Generic Capital. All rights reserved.</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Generic Capital. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleReadMore(id, btn) {
+    const content = document.getElementById(id);
+    const isVisible = content.style.display === 'block';
+    content.style.display = isVisible ? 'none' : 'block';
+    btn.textContent = isVisible ? 'Read more' : 'Read less';
+  }
+</script>
 
 </body>
 </html>
