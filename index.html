@@ -61,23 +61,45 @@
     h2 {
       color: #2b6cb0;
       margin-top: 2.5rem;
-      text-align: center;
+      text-align: left;
     }
 
     .section-intro {
       font-size: 1.1rem;
       margin-bottom: 2rem;
       line-height: 1.6;
+      text-align: left;
+    }
+
+    .core-values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .core-value {
+      background-color: #edf2f7;
+      padding: 1rem;
+      border-radius: 8px;
       text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
     }
 
-    ul {
-      padding-left: 1.5rem;
+    .core-value:hover {
+      transform: translateY(-5px);
     }
 
-    li {
-      line-height: 1.6;
+    .core-value-icon {
+      font-size: 2rem;
       margin-bottom: 0.5rem;
+    }
+
+    .core-value-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #2b6cb0;
     }
 
     .contact-block {
@@ -133,12 +155,25 @@
   <p class="section-intro">
     At Generic Capital, our core values are encapsulated under <strong>RIPE</strong> and are integrated in our business philosophy:
   </p>
-  <ul>
-    <li><strong>Resilience</strong></li>
-    <li><strong>Integrity</strong></li>
-    <li><strong>Partnership</strong></li>
-    <li><strong>Excellence</strong></li>
-  </ul>
+
+  <div class="core-values">
+    <div class="core-value">
+      <div class="core-value-icon">💪</div>
+      <div class="core-value-title">Resilience</div>
+    </div>
+    <div class="core-value">
+      <div class="core-value-icon">🧭</div>
+      <div class="core-value-title">Integrity</div>
+    </div>
+    <div class="core-value">
+      <div class="core-value-icon">🤝</div>
+      <div class="core-value-title">Partnership</div>
+    </div>
+    <div class="core-value">
+      <div class="core-value-icon">🏆</div>
+      <div class="core-value-title">Excellence</div>
+    </div>
+  </div>
 
   <h2>Office Locations</h2>
 
@@ -170,4 +205,5 @@
 
 </body>
 </html>
+
 
